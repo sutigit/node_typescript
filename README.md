@@ -51,6 +51,7 @@ console.log(app.getWord()) -> lol
 {
   "name": "node_typescript",
   "version": "1.0.0",
-  "main": "build/main.ts",
+  "main": "build/main.js",
   "scripts": { ...
 ```
+5. And lastly push it to github
