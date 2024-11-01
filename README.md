@@ -18,7 +18,7 @@ This is a basic Node.js project using TypeScript to demonstrate a simple setup a
 Install this project locally by running:
 
 ```
-$ npm install https://github.com/sutigit/node_typescript.git
+$ npm install https://github.com/sutigit/node-typescript-template.git
 ```
 
 ## Usage
