@@ -25,4 +25,32 @@ $ npm install https://github.com/sutigit/node_typescript.git
 Then you should be able to use the module via 
 ```
 import Main from 'node_typescript';
+
+const app = new Main('lol')
+
+console.log(app.getWord()) -> lol
+```
+
+## How to achieve this
+1. Create project folder: `mkdir project-name`
+2. Install typescript: `npm i typescript -g`
+3. Create typescript config file: `tsc --init`
+4. Adjust settings in `tsconfig.json`
+    1. Set source path. Look for entry `rootDir` and change to: `"rootDir": "./src"`
+    2. Set build path. Look for entry `outDir` and change to: `"outDir": "./build"`
+5. Make typescript ignore everything else except the src folder when building add to the bottom of `tsconfig.json`:
+```
+    "skipLibCheck": true                                 
+  },
+  "include": [
+    "src"
+  ]
+```
+4. Make sure in package.json the `main` is set to the built file. Example:
+```
+{
+  "name": "node_typescript",
+  "version": "1.0.0",
+  "main": "build/main.ts",
+  "scripts": { ...
 ```
