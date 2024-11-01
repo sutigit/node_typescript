@@ -1,4 +1,4 @@
-class Main {
+export default class Main {
     private word: string;
 
     constructor(word: string) {
