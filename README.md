@@ -17,6 +17,12 @@ This is a basic Node.js project using TypeScript to demonstrate a simple setup a
 
 Install this project locally by running:
 
-```bash
-npm install https://github.com/sutigit/node_typescript.git
+```
+$ npm install https://github.com/sutigit/node_typescript.git
+```
+
+## Usage
+Then you should be able to use the module via 
+```
+import Main from 'node_typescript';
 ```
